@@ -13,15 +13,22 @@
 <header x-data="{ open: false }" class="w-full bg-white px-6 py-4 md:px-8 border-b border-gray-200">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logos -->
-    <div class="flex items-center gap-4">
-      <a href="#"><img src="/steidl-lab-website/assets/logo.png" class="h-7" /></a>
-      <a href="#"><img src="/steidl-lab-website/assets/monte-logo.png" class="h-4" /></a>
-    </div>
 
-    <!-- Center Name -->
-    <span class="text-xl md:text-2xl font-bold text-blue-900 tracking-tight">
-      Steidl Lab
-    </span>
+
+
+  <div class="flex items-center gap-3 h-[50px]">
+    <!-- Logo -->
+    <a href="https://einsteinmed.edu/">
+      <img src="/steidl-lab-website/assets/logos/logo3.png" class="h-9 w-auto object-contain" alt="Logo" style="max-height: 50px;" />
+    </a>
+
+    <a href="/steidl-lab-website/ " class="flex flex-col leading-tight pl-2 text-inherit no-underline">
+      <span class="text-xl font-bold text-blue-900">Steidl Lab</span>
+      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
+    </a>
+
+
+  </div>
 
     <!-- Burger icon -->
     <button @click="open = !open" class="md:hidden text-2xl" aria-label="Toggle menu">
@@ -36,9 +43,8 @@
         <li><a href="/steidl-lab-website/research " class="">Research</a></li>
         <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
         <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
-        <li><a href="/steidl-lab-website/about " class="text-purple-700">About</a></li>
         <li><a href="/steidl-lab-website/news " class="">News</a></li>
+        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
       </ul>
     </nav>
   </div>
@@ -51,13 +57,11 @@
         <li><a href="/steidl-lab-website/research " class="">Research</a></li>
         <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
         <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
-        <li><a href="/steidl-lab-website/about " class="text-purple-700">About</a></li>
         <li><a href="/steidl-lab-website/news " class="">News</a></li>
+        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
     </ul>
   </div>
 </header>
-
   
 <section class="py-16 px-8 bg-purple-50">
    <div class="mx-auto max-w-5xl">
