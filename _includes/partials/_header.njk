@@ -3,15 +3,38 @@
 <header x-data="{ open: false }" class="w-full bg-white px-6 py-4 md:px-8 border-b border-gray-200">
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logos -->
+
+{#   <div class="flex items-center gap-4">
     <div class="flex items-center gap-4">
-      <a href="#"><img src="{{ '/assets/logo.png' | url }}" class="h-7" /></a>
-      <a href="#"><img src="{{ '/assets/monte-logo.png' | url }}" class="h-4" /></a>
+      <img src="{{ '/assets/logo2.png' | url }}" class="h-7" alt="Einstein Logo" />
     </div>
 
-    <!-- Center Name -->
-    <span class="text-xl md:text-2xl font-bold text-blue-900 tracking-tight">
-      Steidl Lab
-    </span>
+    <!-- Lab name -->
+    <div class="flex flex-col justify-center">
+      <span class="text-xl md:text-2xl font-bold text-blue-900 tracking-tight">
+        Steidl Lab
+      </span>
+      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
+    </div>
+  </div> #}
+
+  <div class="flex items-center gap-3 h-[50px]">
+    <!-- Logo -->
+    <a href="https://einsteinmed.edu/">
+      <img src="{{ '/assets/logos/logo3.png' | url }}" class="h-9 w-auto object-contain" alt="Logo" style="max-height: 50px;" />
+    </a>
+
+    <a href="{{ '/' | url }} " class="flex flex-col leading-tight pl-2 text-inherit no-underline">
+      <span class="text-xl font-bold text-blue-900">Steidl Lab</span>
+      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
+    </a>
+
+{#     <!-- Lab Name -->
+    <div class="flex flex-col leading-tight pl-2">
+      <span class="text-xl font-bold text-blue-900">Steidl Lab</span>
+      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
+    </div> #}
+  </div>
 
     <!-- Burger icon -->
     <button @click="open = !open" class="md:hidden text-2xl" aria-label="Toggle menu">
@@ -26,9 +49,8 @@
         <li><a href="{{ '/research' | url }} " class="{{ 'text-purple-700' if url === 'research' }}">Research</a></li>
         <li><a href="{{ '/publications' | url }} " class="{{ 'text-purple-700' if url === 'publications' }}">Publications</a></li>
         <li><a href="{{ '/fun' | url }} " class="{{ 'text-purple-700' if url === 'fun' }}">Fun in the Lab</a></li>
-        <li><a href="{{ '/join' | url }} " class="{{ 'text-purple-700' if url === 'join' }}">Join us</a></li>
-        <li><a href="{{ '/about' | url }} " class="{{ 'text-purple-700' if url === 'about' }}">About</a></li>
         <li><a href="{{ '/news' | url }} " class="{{ 'text-purple-700' if url === 'news' }}">News</a></li>
+        <li><a href="{{ '/join' | url }} " class="{{ 'text-purple-700' if url === 'join' }}">Join us</a></li>
       </ul>
     </nav>
   </div>
@@ -41,9 +63,8 @@
         <li><a href="{{ '/research' | url }} " class="{{ 'text-purple-700' if url === 'research' }}">Research</a></li>
         <li><a href="{{ '/publications' | url }} " class="{{ 'text-purple-700' if url === 'publications' }}">Publications</a></li>
         <li><a href="{{ '/fun' | url }} " class="{{ 'text-purple-700' if url === 'fun' }}">Fun in the Lab</a></li>
-        <li><a href="{{ '/join' | url }} " class="{{ 'text-purple-700' if url === 'join' }}">Join us</a></li>
-        <li><a href="{{ '/about' | url }} " class="{{ 'text-purple-700' if url === 'about' }}">About</a></li>
         <li><a href="{{ '/news' | url }} " class="{{ 'text-purple-700' if url === 'news' }}">News</a></li>
+        <li><a href="{{ '/join' | url }} " class="{{ 'text-purple-700' if url === 'join' }}">Join us</a></li>
     </ul>
   </div>
 </header>

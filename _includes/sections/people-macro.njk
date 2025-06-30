@@ -1,9 +1,10 @@
 {% macro person(name, position, image, bio) %} 
-<div x-data="{ open: false }" class="relative">
+<div x-data="{ open: false }" class="relative"> 
   <!-- Card -->
   <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
     <img src="{{ image }}" alt="{{ name }}" class="w-32 h-32 rounded-full object-cover mb-4" />
-    <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ name }}</h3>
+    {# <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ name }}</h3> #}
+    <h3 class="text-base font-semibold text-gray-900 mb-2">{{ name }}</h3>
     <p class="text-sm text-gray-600 mb-4">{{ position }}</p>
     <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
   </div>
