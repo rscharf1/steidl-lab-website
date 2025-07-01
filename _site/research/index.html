@@ -60,15 +60,120 @@
   </div>
 </header>
   
-<section class="flex items-center justify-center h-screen bg-gradient-to-br from-cyan-400 to-purple-500 px-6 text-center">
-  <div class="text-white space-y-6 max-w-md">
-    <h1 class="text-5xl font-extrabold">Coming Soon</h1>
-    <p class="text-lg">This page is under construction. Please check back soon for updates!</p>
-    <a href="/" class="inline-block mt-4 px-6 py-2 bg-white text-purple-700 font-semibold rounded hover:bg-gray-100 transition">
-      Return Home
-    </a>
+
+
+<section class="bg-gray-50 py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Research Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Mechanisms of Leukemia Pathogenesis at the (Pre-Luekemic) Stem Cell Level</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">In our lab, we investigate how pre-leukemic stem cells (pre-LSCs) drive the development and progression of leukemia. By integrating genetic mouse models, single-cell analysis of patient samples, and computational approaches, we uncover the clonal diversity and resilience of pre-LSCs. Our goal is to identify early molecular events that can be targeted to prevent leukemic transformation and improve therapeutic outcomes.</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full p-6 overflow-hidden max-h-[90vh] flex flex-col items-center">
+        <!-- Close button -->
+        <button @click="open = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Mechanisms of Leukemia Pathogenesis at the (Pre-Luekemic) Stem Cell Level</h3>
+
+        <!-- Image -->
+        <img src="/steidl-lab-website/assets/research/proj1.jpg" alt="Mechanisms of Leukemia Pathogenesis at the (Pre-Luekemic) Stem Cell Level" class="rounded-lg object-contain w-full max-h-[75vh]" />
+      </div>
+    </div>
+  </div>
+
+
+      
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Glycotyping Stem and Progenitor Cells</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">In our lab, we apply glycan-based profiling to uncover hidden functional diversity among hematopoietic stem and progenitor cells. Using HS-specific single-chain antibodies, we identify distinct subpopulations not resolvable by conventional CD markers alone. This approach reveals glycan signatures that correlate with transcriptional states and lineage potentials, offering new strategies to refine stem cell classification and function.</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full p-6 overflow-hidden max-h-[90vh] flex flex-col items-center">
+        <!-- Close button -->
+        <button @click="open = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Glycotyping Stem and Progenitor Cells</h3>
+
+        <!-- Image -->
+        <img src="/steidl-lab-website/assets/research/proj2.jpg" alt="Glycotyping Stem and Progenitor Cells" class="rounded-lg object-contain w-full max-h-[75vh]" />
+      </div>
+    </div>
+  </div>
+
+
+            
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Single Molecule Detection of Leukemia Initiation and Resistance</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">We use single-molecule imaging and transcriptomic approaches to dissect heterogeneity and transcriptional plasticity in hematopoietic stem and progenitor cells. By tracking individual mRNA and transcription factor dynamics, we uncover how unique transcriptional states emerge, evolve, and drive drug resistance or leukemia progression. These insights allow us to map stem cell fate decisions at unprecedented resolution and understand how non-genetic mechanisms contribute to relapse and treatment failure in AML.</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full p-6 overflow-hidden max-h-[90vh] flex flex-col items-center">
+        <!-- Close button -->
+        <button @click="open = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Single Molecule Detection of Leukemia Initiation and Resistance</h3>
+
+        <!-- Image -->
+        <img src="/steidl-lab-website/assets/research/proj3.jpg" alt="Single Molecule Detection of Leukemia Initiation and Resistance" class="rounded-lg object-contain w-full max-h-[75vh]" />
+      </div>
+    </div>
+  </div>
+
+
+      
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Extrinsic Regulation of Leukemic Stem Cells</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">We are investigating how extrinsic factors within the microenvironment regulate leukemic stem cell behavior. Using spatially controlled 3D bioprinting and in vivo xenograft models, we aim to uncover how cell-cell interactions and cytokines such as IL-8, which lacks a murine homolog, contribute to leukemogenesis. Our lab is developing IL-8-expressing mouse models to better understand its role in myeloid malignancies and enable mechanistic studies that were previously limited by species-specific constraints.</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full p-6 overflow-hidden max-h-[90vh] flex flex-col items-center">
+        <!-- Close button -->
+        <button @click="open = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Extrinsic Regulation of Leukemic Stem Cells</h3>
+
+        <!-- Image -->
+        <img src="/steidl-lab-website/assets/research/proj4.jpg" alt="Extrinsic Regulation of Leukemic Stem Cells" class="rounded-lg object-contain w-full max-h-[75vh]" />
+      </div>
+    </div>
+  </div>
+
+    </div>
   </div>
 </section>
+
 
   <!-- <footer class="bg-white w-full text-center px-6 py-2 mt-auto md:px-8">
 	<small>

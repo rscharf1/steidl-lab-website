@@ -6,24 +6,21 @@
 <!-- <section class="bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 py-10 px-6 md:px-12"> -->
 <section class="bg-black py-10 px-6 md:px-12">
   <div class="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    
-    <!-- Image -->
-    <div class="flex justify-center">
-      <!-- <img src="{{ '/assets/smfish.jpg' | url }}" alt="smFISH imaging" class="max-h-[30rem] rounded-lg shadow-xl ring-1 ring-white/20" /> -->
-      <img src="{{ '/assets/smfish.jpg' | url }}" alt="smFISH imaging" class="max-h-[30rem] rounded-lg shadow-xl" />
 
-    </div>
-    
-    <!-- Text -->
-    <div>
+    <!-- Text: Appears first on mobile, second on md+ -->
+    <div class="order-1 md:order-2">
       <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white leading-snug">
         Our goal is to understand and target molecular mechanisms in healthy, pre-cancerous, and leukemic stem cell
       </h1>
-
       <p class="mt-5 text-white/90 text-base md:text-lg leading-relaxed max-w-xl">
         We use advanced molecular and imaging techniques to investigate how stem cells evolve from healthy to malignant states. We are working to uncover critical mechanisms driving blood cancers and identify new therapeutic targets.
       </p>
     </div>
-    
+
+    <!-- Image: Appears second on mobile, first on md+ -->
+    <div class="order-2 md:order-1 flex justify-center">
+      <img src="{{ '/assets/smfish.jpg' | url }}" alt="smFISH imaging" class="max-h-[30rem] rounded-lg shadow-xl" />
+    </div>
+
   </div>
 </section>

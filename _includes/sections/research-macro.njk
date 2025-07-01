@@ -1,0 +1,51 @@
+{# {% macro research_project(title, description, image, full_text) %}
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ title }}</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">{{ description }}</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-5xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start overflow-y-auto max-h-[90vh]">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="w-full md:w-1/2">
+          <img src="{{ image }}" alt="{{ title }}" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ title }}</h3>
+          <p class="text-sm text-gray-700 leading-relaxed whitespace-pre-line">{{ full_text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endmacro %} #}
+
+{% macro research_project(title, description, image) %}
+  <div x-data="{ open: false }" class="relative h-full">
+    <!-- Card -->
+    <div class="h-full flex flex-col justify-between bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition cursor-pointer" @click="open = true">
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ title }}</h3>
+      <p class="text-gray-700 text-sm leading-relaxed">{{ description }}</p>
+    </div>
+
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="relative bg-white rounded-lg shadow-xl max-w-6xl w-full p-6 overflow-hidden max-h-[90vh] flex flex-col items-center">
+        <!-- Close button -->
+        <button @click="open = false" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl">&times;</button>
+
+        <!-- Title -->
+        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">{{ title }}</h3>
+
+        <!-- Image -->
+        <img src="{{ image }}" alt="{{ title }}" class="rounded-lg object-contain w-full max-h-[75vh]" />
+      </div>
+    </div>
+  </div>
+{% endmacro %}

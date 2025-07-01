@@ -1,9 +1,34 @@
-<section class="flex items-center justify-center h-screen bg-gradient-to-br from-cyan-400 to-purple-500 px-6 text-center">
-  <div class="text-white space-y-6 max-w-md">
-    <h1 class="text-5xl font-extrabold">Coming Soon</h1>
-    <p class="text-lg">This page is under construction. Please check back soon for updates!</p>
-    <a href="/" class="inline-block mt-4 px-6 py-2 bg-white text-purple-700 font-semibold rounded hover:bg-gray-100 transition">
-      Return Home
-    </a>
+{% import 'sections/research-macro.njk' as macro %}
+
+<section class="bg-gray-50 py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-12">Research Projects</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+      {{ macro.research_project(
+        "Mechanisms of Leukemia Pathogenesis at the (Pre-Luekemic) Stem Cell Level",
+        "In our lab, we investigate how pre-leukemic stem cells (pre-LSCs) drive the development and progression of leukemia. By integrating genetic mouse models, single-cell analysis of patient samples, and computational approaches, we uncover the clonal diversity and resilience of pre-LSCs. Our goal is to identify early molecular events that can be targeted to prevent leukemic transformation and improve therapeutic outcomes.",
+        ('/assets/research/proj1.jpg') | url
+      ) }}
+
+      {{ macro.research_project(
+        "Glycotyping Stem and Progenitor Cells",
+        "In our lab, we apply glycan-based profiling to uncover hidden functional diversity among hematopoietic stem and progenitor cells. Using HS-specific single-chain antibodies, we identify distinct subpopulations not resolvable by conventional CD markers alone. This approach reveals glycan signatures that correlate with transcriptional states and lineage potentials, offering new strategies to refine stem cell classification and function.",
+        ('/assets/research/proj2.jpg') | url
+      ) }}
+
+            {{ macro.research_project(
+        "Single Molecule Detection of Leukemia Initiation and Resistance",
+        "We use single-molecule imaging and transcriptomic approaches to dissect heterogeneity and transcriptional plasticity in hematopoietic stem and progenitor cells. By tracking individual mRNA and transcription factor dynamics, we uncover how unique transcriptional states emerge, evolve, and drive drug resistance or leukemia progression. These insights allow us to map stem cell fate decisions at unprecedented resolution and understand how non-genetic mechanisms contribute to relapse and treatment failure in AML.",
+        ('/assets/research/proj3.jpg') | url
+      ) }}
+
+      {{ macro.research_project(
+        "Extrinsic Regulation of Leukemic Stem Cells",
+        "We are investigating how extrinsic factors within the microenvironment regulate leukemic stem cell behavior. Using spatially controlled 3D bioprinting and in vivo xenograft models, we aim to uncover how cell-cell interactions and cytokines such as IL-8, which lacks a murine homolog, contribute to leukemogenesis. Our lab is developing IL-8-expressing mouse models to better understand its role in myeloid malignancies and enable mechanistic studies that were previously limited by species-specific constraints.",
+        ('/assets/research/proj4.jpg') | url
+      ) }}
+    </div>
   </div>
 </section>
+
