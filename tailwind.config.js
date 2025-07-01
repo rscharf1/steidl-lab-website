@@ -5,6 +5,8 @@ module.exports = {
     './**/*.js',
     './_includes/**/*.njk',
     './_layouts/**/*.njk',
+    '!./_site/**/*',       
+    '!./node_modules/**/*'
   ],
   safelist: [],
   // theme: {
