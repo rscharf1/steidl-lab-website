@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.text-einstein-blue {
+  color: #003b7d;
+}

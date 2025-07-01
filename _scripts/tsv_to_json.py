@@ -3,8 +3,8 @@ import json
 import os
 
 # File paths
-tsv_file = '_data/team.tsv'
-json_file = '_data/team.json'  # Adjust if needed
+tsv_file = '_data/alumni.tsv'
+json_file = '_data/alumni.json'  # Adjust if needed
 
 # Ensure _data directory exists
 os.makedirs(os.path.dirname(json_file), exist_ok=True)
