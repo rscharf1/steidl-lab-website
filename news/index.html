@@ -14,21 +14,18 @@
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logos -->
 
+  <div class="flex items-center space-x-1">
+  <!-- Logo -->
+  <a href="https://einsteinmed.edu/">
+    <img src="/steidl-lab-website/assets/logos/logo3.png" alt="Einstein Logo" class="h-12 w-auto object-contain shrink-0 min-w-[100px]" />
+  </a>
 
-
-  <div class="flex items-center gap-3 h-[50px]">
-    <!-- Logo -->
-    <a href="https://einsteinmed.edu/">
-      <img src="/steidl-lab-website/assets/logos/logo3.png" class="h-9 w-auto object-contain" alt="Logo" style="max-height: 50px;" />
-    </a>
-
-    <a href="/steidl-lab-website/ " class="flex flex-col leading-tight pl-2 text-inherit no-underline">
-      <span class="text-xl font-bold text-blue-900">Steidl Lab</span>
-      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
-    </a>
-
-
-  </div>
+  <!-- Lab Name and Department -->
+  <a href="/steidl-lab-website/" class="flex flex-col leading-tight text-inherit no-underline">
+    <span class="text-xl font-bold text-black">Steidl Lab</span>
+    <span class="text-sm italic text-gray-600 whitespace-nowrap">Department of Cell Biology</span>
+  </a>
+</div>
 
     <!-- Burger icon -->
     <button @click="open = !open" class="md:hidden text-2xl" aria-label="Toggle menu">
@@ -37,14 +34,14 @@
 
     <!-- Desktop nav -->
     <nav class="hidden md:block">
-      <ul class="flex gap-6 font-semibold text-sm">
-        <li><a href="/steidl-lab-website/ " class="">Home</a></li>
-        <li><a href="/steidl-lab-website/people " class="">People</a></li>
-        <li><a href="/steidl-lab-website/research " class="">Research</a></li>
-        <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
-        <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/news " class="text-purple-700">News</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
+      <ul class="flex gap-6 font-semibold text-sm whitespace-nowrap overflow-x-auto">
+        <li><a href="/steidl-lab-website/ " class=" hover:underline underline-offset-4">Home</a></li>
+        <li><a href="/steidl-lab-website/people " class=" hover:underline underline-offset-4">People</a></li>
+        <li><a href="/steidl-lab-website/research " class=" hover:underline underline-offset-4">Research</a></li>
+        <li><a href="/steidl-lab-website/publications " class=" hover:underline underline-offset-4">Publications</a></li>
+        <li><a href="/steidl-lab-website/fun " class=" hover:underline underline-offset-4">Fun in the Lab</a></li>
+        <li><a href="/steidl-lab-website/news " class="text-einstein-blue hover:underline underline-offset-4">News</a></li>
+        <li><a href="/steidl-lab-website/join " class=" hover:underline underline-offset-4">Join us</a></li>
       </ul>
     </nav>
   </div>
@@ -52,13 +49,13 @@
   <!-- Mobile nav -->
   <div x-show="open" class="md:hidden px-4 pt-4 pb-2">
     <ul class="space-y-3 text-sm font-medium">
-        <li><a href="/steidl-lab-website/ " class="">Home</a></li>
-        <li><a href="/steidl-lab-website/people " class="">People</a></li>
-        <li><a href="/steidl-lab-website/research " class="">Research</a></li>
-        <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
-        <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/news " class="text-purple-700">News</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
+        <li><a href="/steidl-lab-website/ " class=" hover:underline underline-offset-4">Home</a></li>
+        <li><a href="/steidl-lab-website/people " class=" hover:underline underline-offset-4">People</a></li>
+        <li><a href="/steidl-lab-website/research " class=" hover:underline underline-offset-4">Research</a></li>
+        <li><a href="/steidl-lab-website/publications " class=" hover:underline underline-offset-4">Publications</a></li>
+        <li><a href="/steidl-lab-website/fun " class=" hover:underline underline-offset-4">Fun in the Lab</a></li>
+        <li><a href="/steidl-lab-website/news " class="text-einstein-blue hover:underline underline-offset-4">News</a></li>
+        <li><a href="/steidl-lab-website/join " class=" hover:underline underline-offset-4">Join us</a></li>
     </ul>
   </div>
 </header>

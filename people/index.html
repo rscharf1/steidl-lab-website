@@ -14,21 +14,18 @@
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <!-- Logos -->
 
+  <div class="flex items-center space-x-1">
+  <!-- Logo -->
+  <a href="https://einsteinmed.edu/">
+    <img src="/steidl-lab-website/assets/logos/logo3.png" alt="Einstein Logo" class="h-12 w-auto object-contain shrink-0 min-w-[100px]" />
+  </a>
 
-
-  <div class="flex items-center gap-3 h-[50px]">
-    <!-- Logo -->
-    <a href="https://einsteinmed.edu/">
-      <img src="/steidl-lab-website/assets/logos/logo3.png" class="h-9 w-auto object-contain" alt="Logo" style="max-height: 50px;" />
-    </a>
-
-    <a href="/steidl-lab-website/ " class="flex flex-col leading-tight pl-2 text-inherit no-underline">
-      <span class="text-xl font-bold text-blue-900">Steidl Lab</span>
-      <span class="text-sm italic text-gray-600">Department of Cell Biology</span>
-    </a>
-
-
-  </div>
+  <!-- Lab Name and Department -->
+  <a href="/steidl-lab-website/" class="flex flex-col leading-tight text-inherit no-underline">
+    <span class="text-xl font-bold text-black">Steidl Lab</span>
+    <span class="text-sm italic text-gray-600 whitespace-nowrap">Department of Cell Biology</span>
+  </a>
+</div>
 
     <!-- Burger icon -->
     <button @click="open = !open" class="md:hidden text-2xl" aria-label="Toggle menu">
@@ -37,14 +34,14 @@
 
     <!-- Desktop nav -->
     <nav class="hidden md:block">
-      <ul class="flex gap-6 font-semibold text-sm">
-        <li><a href="/steidl-lab-website/ " class="">Home</a></li>
-        <li><a href="/steidl-lab-website/people " class="text-purple-700">People</a></li>
-        <li><a href="/steidl-lab-website/research " class="">Research</a></li>
-        <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
-        <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/news " class="">News</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
+      <ul class="flex gap-6 font-semibold text-sm whitespace-nowrap overflow-x-auto">
+        <li><a href="/steidl-lab-website/ " class=" hover:underline underline-offset-4">Home</a></li>
+        <li><a href="/steidl-lab-website/people " class="text-einstein-blue hover:underline underline-offset-4">People</a></li>
+        <li><a href="/steidl-lab-website/research " class=" hover:underline underline-offset-4">Research</a></li>
+        <li><a href="/steidl-lab-website/publications " class=" hover:underline underline-offset-4">Publications</a></li>
+        <li><a href="/steidl-lab-website/fun " class=" hover:underline underline-offset-4">Fun in the Lab</a></li>
+        <li><a href="/steidl-lab-website/news " class=" hover:underline underline-offset-4">News</a></li>
+        <li><a href="/steidl-lab-website/join " class=" hover:underline underline-offset-4">Join us</a></li>
       </ul>
     </nav>
   </div>
@@ -52,13 +49,13 @@
   <!-- Mobile nav -->
   <div x-show="open" class="md:hidden px-4 pt-4 pb-2">
     <ul class="space-y-3 text-sm font-medium">
-        <li><a href="/steidl-lab-website/ " class="">Home</a></li>
-        <li><a href="/steidl-lab-website/people " class="text-purple-700">People</a></li>
-        <li><a href="/steidl-lab-website/research " class="">Research</a></li>
-        <li><a href="/steidl-lab-website/publications " class="">Publications</a></li>
-        <li><a href="/steidl-lab-website/fun " class="">Fun in the Lab</a></li>
-        <li><a href="/steidl-lab-website/news " class="">News</a></li>
-        <li><a href="/steidl-lab-website/join " class="">Join us</a></li>
+        <li><a href="/steidl-lab-website/ " class=" hover:underline underline-offset-4">Home</a></li>
+        <li><a href="/steidl-lab-website/people " class="text-einstein-blue hover:underline underline-offset-4">People</a></li>
+        <li><a href="/steidl-lab-website/research " class=" hover:underline underline-offset-4">Research</a></li>
+        <li><a href="/steidl-lab-website/publications " class=" hover:underline underline-offset-4">Publications</a></li>
+        <li><a href="/steidl-lab-website/fun " class=" hover:underline underline-offset-4">Fun in the Lab</a></li>
+        <li><a href="/steidl-lab-website/news " class=" hover:underline underline-offset-4">News</a></li>
+        <li><a href="/steidl-lab-website/join " class=" hover:underline underline-offset-4">Join us</a></li>
     </ul>
   </div>
 </header>
@@ -68,687 +65,516 @@
 <section class="bg-white py-16 px-6 md:px-12">  
   <div class="max-w-7xl mx-auto">
     <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Meet the Team</h2>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-stretch">
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/ulrich_steidl.jpg" alt="Ulrich Steidl" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Ulrich Steidl</h3>
-    <p class="text-sm text-gray-600 mb-4">Principal Investigator</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Ulrich Steidl</h3>
-      <p class="text-base text-gray-700 mb-4">Principal Investigator</p>
-      <p class="text-sm text-gray-600">Dr. Steidl is a professor at Einstein and co-director of the Montefiore-Einstein Cancer Center. His lab focuses on stem cell dysregulation in myeloid malignancies.  Test test </p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/ulrich_steidl.jpg" alt="Ulrich Steidl" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Ulrich Steidl</h3>
+      <p class="text-sm text-gray-600 mb-4">Principal Investigator</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/ulrich_steidl.jpg" alt="Ulrich Steidl" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Ulrich Steidl</h3>
+          <p class="text-base text-gray-700 mb-4">Principal Investigator</p>
+          <p class="text-sm text-gray-600">Dr. Steidl is a professor at Einstein and co-director of the Montefiore-Einstein Cancer Center. His lab focuses on stem cell dysregulation in myeloid malignancies.  Test test </p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/ulrich_steidl.jpg" alt="Ulrich Steidl" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/amber_buhagiar.jpg" alt="Amber Buhagiar" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Amber Buhagiar</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Amber Buhagiar</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/amber_buhagiar.jpg" alt="Amber Buhagiar" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Amber Buhagiar</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/amber_buhagiar.jpg" alt="Amber Buhagiar" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Amber Buhagiar</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/amber_buhagiar.jpg" alt="Amber Buhagiar" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/john_hobbs.jpg" alt="John Hobbs" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">John Hobbs</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">John Hobbs</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/john_hobbs.jpg" alt="John Hobbs" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">John Hobbs</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/john_hobbs.jpg" alt="John Hobbs" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">John Hobbs</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/john_hobbs.jpg" alt="John Hobbs" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/loulou.jpg" alt="Lou Lou Dimple Maria Reenath Victor Jagaraja" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Lou Lou Dimple Maria Reenath Victor Jagaraja</h3>
-    <p class="text-sm text-gray-600 mb-4">Research Technician</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Lou Lou Dimple Maria Reenath Victor Jagaraja</h3>
-      <p class="text-base text-gray-700 mb-4">Research Technician</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/loulou.jpg" alt="Lou Lou Dimple Maria Reenath Victor Jagaraja" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Lou Lou Dimple Maria Reenath Victor Jagaraja</h3>
+      <p class="text-sm text-gray-600 mb-4">Research Technician</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/loulou.jpg" alt="Lou Lou Dimple Maria Reenath Victor Jagaraja" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Lou Lou Dimple Maria Reenath Victor Jagaraja</h3>
+          <p class="text-base text-gray-700 mb-4">Research Technician</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/loulou.jpg" alt="Lou Lou Dimple Maria Reenath Victor Jagaraja" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/catherine_jankovic.jpg" alt="Catherine Jankovic" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Catherine Jankovic</h3>
-    <p class="text-sm text-gray-600 mb-4">Research Technician</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Catherine Jankovic</h3>
-      <p class="text-base text-gray-700 mb-4">Research Technician</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/catherine_jankovic.jpg" alt="Catherine Jankovic" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Catherine Jankovic</h3>
+      <p class="text-sm text-gray-600 mb-4">Research Technician</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/catherine_jankovic.jpg" alt="Catherine Jankovic" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Catherine Jankovic</h3>
+          <p class="text-base text-gray-700 mb-4">Research Technician</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/catherine_jankovic.jpg" alt="Catherine Jankovic" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/rajni_kumari.jpg" alt="Rajni Kumari" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Rajni Kumari</h3>
-    <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Rajni Kumari</h3>
-      <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/rajni_kumari.jpg" alt="Rajni Kumari" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Rajni Kumari</h3>
+      <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/rajni_kumari.jpg" alt="Rajni Kumari" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Rajni Kumari</h3>
+          <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/rajni_kumari.jpg" alt="Rajni Kumari" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/sriram_sundaravel.jpg" alt="Sriram Sundaravel" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Sriram Sundaravel</h3>
-    <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Sriram Sundaravel</h3>
-      <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/sriram_sundaravel.jpg" alt="Sriram Sundaravel" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Sriram Sundaravel</h3>
+      <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/sriram_sundaravel.jpg" alt="Sriram Sundaravel" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Sriram Sundaravel</h3>
+          <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/sriram_sundaravel.jpg" alt="Sriram Sundaravel" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/shuting_li.jpg" alt="Shuting Li" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Shuting Li</h3>
-    <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Shuting Li</h3>
-      <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/shuting_li.jpg" alt="Shuting Li" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Shuting Li</h3>
+      <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/shuting_li.jpg" alt="Shuting Li" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Shuting Li</h3>
+          <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/shuting_li.jpg" alt="Shuting Li" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/samuel_taylor.jpg" alt="Samuel Taylor" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Samuel Taylor</h3>
-    <p class="text-sm text-gray-600 mb-4">Instructor</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Samuel Taylor</h3>
-      <p class="text-base text-gray-700 mb-4">Instructor</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/samuel_taylor.jpg" alt="Samuel Taylor" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Samuel Taylor</h3>
+      <p class="text-sm text-gray-600 mb-4">Instructor</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/samuel_taylor.jpg" alt="Samuel Taylor" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Samuel Taylor</h3>
+          <p class="text-base text-gray-700 mb-4">Instructor</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/samuel_taylor.jpg" alt="Samuel Taylor" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/shoichiro_takeishi.jpg" alt="Shoichiro Takeishi" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Shoichiro Takeishi</h3>
-    <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Shoichiro Takeishi</h3>
-      <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/shoichiro_takeishi.jpg" alt="Shoichiro Takeishi" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Shoichiro Takeishi</h3>
+      <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/shoichiro_takeishi.jpg" alt="Shoichiro Takeishi" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Shoichiro Takeishi</h3>
+          <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/shoichiro_takeishi.jpg" alt="Shoichiro Takeishi" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/tisha_todorova.jpg" alt="Tisha Todorova" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Tisha Todorova</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Tisha Todorova</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/tisha_todorova.jpg" alt="Tisha Todorova" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Tisha Todorova</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/tisha_todorova.jpg" alt="Tisha Todorova" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Tisha Todorova</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/tisha_todorova.jpg" alt="Tisha Todorova" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/brad_tricomi.jpg" alt="Brad Tricomi" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Brad Tricomi</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Brad Tricomi</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/brad_tricomi.jpg" alt="Brad Tricomi" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Brad Tricomi</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/brad_tricomi.jpg" alt="Brad Tricomi" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Brad Tricomi</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/brad_tricomi.jpg" alt="Brad Tricomi" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/anastasiya_slaughter.jpg" alt="Anastasiya Slaughter" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Anastasiya Slaughter</h3>
-    <p class="text-sm text-gray-600 mb-4">Research Fellow</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Anastasiya Slaughter</h3>
-      <p class="text-base text-gray-700 mb-4">Research Fellow</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/anastasiya_slaughter.jpg" alt="Anastasiya Slaughter" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Anastasiya Slaughter</h3>
+      <p class="text-sm text-gray-600 mb-4">Research Fellow</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/anastasiya_slaughter.jpg" alt="Anastasiya Slaughter" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Anastasiya Slaughter</h3>
+          <p class="text-base text-gray-700 mb-4">Research Fellow</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/anastasiya_slaughter.jpg" alt="Anastasiya Slaughter" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/yutaro_suzuki.jpg" alt="Yutaro Suzuki" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Yutaro Suzuki</h3>
-    <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Yutaro Suzuki</h3>
-      <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/yutaro_suzuki.jpg" alt="Yutaro Suzuki" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Yutaro Suzuki</h3>
+      <p class="text-sm text-gray-600 mb-4">Staff Scientist</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/yutaro_suzuki.jpg" alt="Yutaro Suzuki" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Yutaro Suzuki</h3>
+          <p class="text-base text-gray-700 mb-4">Staff Scientist</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/yutaro_suzuki.jpg" alt="Yutaro Suzuki" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/sophia_liu.jpg" alt="Sophia Liu" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Sophia Liu</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Sophia Liu</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/sophia_liu.jpg" alt="Sophia Liu" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Sophia Liu</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/sophia_liu.jpg" alt="Sophia Liu" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Sophia Liu</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/sophia_liu.jpg" alt="Sophia Liu" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/gabrielle_chernomorsky.jpg" alt="Gabrielle Chernomorsky" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Gabrielle Chernomorsky</h3>
-    <p class="text-sm text-gray-600 mb-4">PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Gabrielle Chernomorsky</h3>
-      <p class="text-base text-gray-700 mb-4">PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/gabrielle_chernomorsky.jpg" alt="Gabrielle Chernomorsky" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Gabrielle Chernomorsky</h3>
+      <p class="text-sm text-gray-600 mb-4">PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/gabrielle_chernomorsky.jpg" alt="Gabrielle Chernomorsky" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Gabrielle Chernomorsky</h3>
+          <p class="text-base text-gray-700 mb-4">PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/gabrielle_chernomorsky.jpg" alt="Gabrielle Chernomorsky" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
         
-         
-<div x-data="{ open: false }" class="relative"> 
-  <!-- Card -->
-  <div class="bg-gray-50 rounded-lg shadow-md p-6 flex flex-col items-center text-center">
-    <img src="/steidl-lab-website/assets/people/russell_scharf.jpg" alt="Russell Scharf" class="w-32 h-32 rounded-full object-cover mb-4" />
-    
-    <h3 class="text-base font-semibold text-gray-900 mb-2">Russell Scharf</h3>
-    <p class="text-sm text-gray-600 mb-4">MD/PhD Student</p>
-    <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
-  </div>
-
-  <!-- Modal -->
-  
-<div x-show="open"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
-     x-cloak>
-  <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
-    
-    <!-- Close Button -->
-    <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
-    
-    <!-- Left: Text content -->
-    <div class="flex-1">
-      <h3 class="text-2xl font-bold text-gray-900 mb-2">Russell Scharf</h3>
-      <p class="text-base text-gray-700 mb-4">MD/PhD Student</p>
-      <p class="text-sm text-gray-600">TBD</p>
+        
+  <div x-data="{ open: false }" class="relative h-full">
+    <div class="h-full flex flex-col justify-between bg-gray-50 rounded-lg shadow-md p-6 items-center text-center">
+      <img src="/steidl-lab-website/assets/people/russell_scharf.jpg" alt="Russell Scharf" class="w-32 h-32 rounded-full object-cover mb-4" />
+      <h3 class="text-base font-semibold text-gray-900 mb-2">Russell Scharf</h3>
+      <p class="text-sm text-gray-600 mb-4">MD/PhD Student</p>
+      <button @click="open = true" class="text-sm font-medium text-purple-700 hover:underline">Read more →</button>
     </div>
 
-    <!-- Right: Image -->
-    <div class="w-full md:w-1/3">
-      <img src="/steidl-lab-website/assets/people/russell_scharf.jpg" alt="Russell Scharf" class="rounded-lg w-full h-auto object-cover" />
+    <!-- Modal -->
+    <div x-show="open"
+         class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center px-4"
+         x-cloak>
+      <div class="bg-white rounded-lg shadow-lg max-w-3xl w-full p-6 relative flex flex-col md:flex-row gap-6 items-start">
+        <button @click="open = false" class="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-xl">&times;</button>
+        <div class="flex-1">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">Russell Scharf</h3>
+          <p class="text-base text-gray-700 mb-4">MD/PhD Student</p>
+          <p class="text-sm text-gray-600">TBD</p>
+        </div>
+        <div class="w-full md:w-1/3">
+          <img src="/steidl-lab-website/assets/people/russell_scharf.jpg" alt="Russell Scharf" class="rounded-lg w-full h-auto object-cover" />
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-</div>
 
 
       
@@ -757,6 +583,391 @@
   </div>
 </section>
 
+
+<section class="bg-gray-50 py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">Lab Alumni</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-stretch">
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/michael_roth.jpg" alt="Michael Roth, MD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Michael Roth, MD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Professor of PediatricsThe University of Texas MD Anderson Cancer Center</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/britta_will.jpg" alt="Britta Will, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Britta Will, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor of Oncology, Medicine, Cell Biology, Albert Einstein College of Medicine</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow and Instructor</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/xin_gao.jpg" alt="Xin Gao, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Xin Gao, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Assistant Professor Wisconsin Blood Cancer Research Institute</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/koki_ueda.jpg" alt="Koki Ueda, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Koki Ueda, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor of Transfusion Medicine, Fukushima Medical University, Japan</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/ileana_antony-debre.jpg" alt="Iléana Antony-Debré, PharmD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Iléana Antony-Debré, PharmD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Principal Investigator/Group leader, Goustave Roussy Institute, Paris, France</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/hiroki_goto.jpg" alt="Hiroki Goto, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Hiroki Goto, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor, Institute of Resource Development and Analysis, Kumamoto University</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/jiahao_chen.jpg" alt="Jiahao Chen, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Jiahao Chen, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor Shanghai Jiao Tong University School of Medicine</p>
+
+    <p class="text-xs text-gray-500 italic">Former PhD Student</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/goichi_tatsumi.jpg" alt="Goichi Tatsumi, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Goichi Tatsumi, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor, Tokyo </p>
+
+    <p class="text-xs text-gray-500 italic">Former Instructor</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/maximilian_christopeit.jpg" alt="Maximilian Christopeit, MD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Maximilian Christopeit, MD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Assistant Professor of Haematology, University of Tuebingen Medical Center, Germany</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/lisa_figueiredo-gennarini.jpg" alt="Lisa M. Figueiredo-Gennarini, MD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Lisa M. Figueiredo-Gennarini, MD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor, Department of Pediatrics , Albert Einstein College of Medicine</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/luis_carvajal.jpg" alt="Luis Carvajal, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Luis Carvajal, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Director, Translational Development at Kronos Bio, Inc</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/masahiro_kawahara.jpg" alt="Masahiro Kawahara, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Masahiro Kawahara, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Associate Professor of Medicine University of Medical Science, Shiga, Japan</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Fellow</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/yun-rei_kao.jpg" alt="Yun-Rei Kao, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Yun-Rei Kao, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Research Assistant Professor, Albert Einstein College of Medicine</p>
+
+    <p class="text-xs text-gray-500 italic">Former PhD Student</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/kelly_mitchell.jpg" alt="Kelly Mitchell, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Kelly Mitchell, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Research Fellow, Fred Hutchinson Cancer Center, Seattle</p>
+
+    <p class="text-xs text-gray-500 italic">Former PhD Student</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/robert_stanley.jpg" alt="Robert F. Stanley, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Robert F. Stanley, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Fellow, Memorial Sloan Kettering Cancer Center, NY</p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/richard_piszczatowksi.jpg" alt="Richard T. Piszczatowksi, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Richard T. Piszczatowksi, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Pediatrics Fellow, Weill Cornell Medicine, NY</p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/justin_wheat.jpg" alt="Justin C. Wheat, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Justin C. Wheat, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Medicine Resident, Brigham and Women’s Hospital / Harvard Medical School</p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/ashley_eckel.jpg" alt="Ashley Eckel, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Ashley Eckel, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Assistant Professor of Laboratory Medicine &amp; Pathology; Associate Director, Hematopathology; University of Washington</p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/laura_barreyro.jpg" alt="Laura Barreyro, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Laura Barreyro, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Principal Scientist, Oncology Translational Research, Janssen Pharmaceutical Companies of Johnson &amp; Johnson</p>
+
+    <p class="text-xs text-gray-500 italic">Former PhD Student</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/ujunwa_cynthia_okoye-okafor.jpg" alt="Ujunwa Cynthia Okoye-Okafor, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Ujunwa Cynthia Okoye-Okafor, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Research Scientist, Sonder Research X</p>
+
+    <p class="text-xs text-gray-500 italic">Former PhD Student</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/oliver_bohoqueroz.jpg" alt="Oliver Bohoqueroz" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Oliver Bohoqueroz</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Research Technician, Harvard Medical School, Dana Farmer Cancer Institute</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Technician</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/jillian_cotter.jpg" alt="Jillian (Mayer) Cotter, MD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Jillian (Mayer) Cotter, MD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Pediatrician, University of Colorado Hospital, Aurora, CO</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Technician</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/thomas_vogler.jpg" alt="Thomas O. Vogler, MD/PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Thomas O. Vogler, MD/PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs">Surgery Resident, University of Colorado</p>
+
+    <p class="text-xs text-gray-500 italic">Former Research Technician</p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/emily_schwenger.jpg" alt="Emily Schwenger, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Emily Schwenger, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs"></p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+        
+
+
+  <div class="bg-gray-100 rounded-lg shadow p-6 text-center h-full flex flex-col items-center justify-start">
+    <img src="/steidl-lab-website/assets/alumni/jacob_stauber.jpg" alt="Jacob Stauber, PhD" class="w-24 h-24 rounded-full object-cover mb-4" />
+    
+    <h3 class="text-base font-semibold text-gray-900 mb-2">Jacob Stauber, PhD</h3>
+
+    <p class="text-sm text-gray-700 mb-2 max-w-xs"></p>
+
+    <p class="text-xs text-gray-500 italic">Former MD/PhD Student </p>
+  </div>
+
+
+      
+    </div>
+  </div>
+</section>
 
   <!-- <footer class="bg-white w-full text-center px-6 py-2 mt-auto md:px-8">
 	<small>
