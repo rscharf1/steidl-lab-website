@@ -29,7 +29,7 @@
       {% for alum in alumni %}
         {{ macro.alumnus(
           alum.Name,
-          alum.Current_position,
+          alum.Current_position | replace('\\n', '<br>'),
           'Former ' + alum.Previous_position,
           ('/assets/alumni/' + alum.image_name) | url
         ) }}
