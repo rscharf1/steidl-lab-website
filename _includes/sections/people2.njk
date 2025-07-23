@@ -11,7 +11,7 @@
             member.Name,
             member.Title,
             ('/assets/people/' + member.image_name) | url,
-            member.Description
+            member.Description | replace('\\n', '<br>')
           ) }}
 
       {% endfor %}
