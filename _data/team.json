@@ -14,19 +14,19 @@
   {
     "Name": "John Hobbs",
     "Title": "PhD Student",
-    "Description": "TBD",
+    "Description": "",
     "image_name": "john_hobbs.jpg"
   },
   {
     "Name": "Lou Lou Dimple Maria Reenath Victor Jagaraja",
     "Title": "Research Technician",
-    "Description": "TBD",
+    "Description": "",
     "image_name": "loulou.jpg"
   },
   {
     "Name": "Catherine Jankovic",
     "Title": "Research Technician",
-    "Description": "TBD",
+    "Description": "",
     "image_name": "catherine_jankovic.jpg"
   },
   {
@@ -62,13 +62,13 @@
   {
     "Name": "Tisha Todorova",
     "Title": "PhD Student",
-    "Description": "TBD",
+    "Description": "",
     "image_name": "tisha_todorova.jpg"
   },
   {
     "Name": "Brad Tricomi",
     "Title": "PhD Student",
-    "Description": "TBD",
+    "Description": "",
     "image_name": "brad_tricomi.jpg"
   },
   {
@@ -80,7 +80,7 @@
   {
     "Name": "Yutaro Suzuki",
     "Title": "Staff Scientist",
-    "Description": "",
+    "Description": "Yutaro is a physician-scientist who received his MD from Chiba University and PhD from the University of Tokyo in Japan. As a hematologist, he developed an interest in leukemia and has been investigating how epigenetic gene mutations contribute to disease development in his previous work. In the Steidl Lab, Yutaro is studying abnormalities in the transcriptional dynamics of leukemic stem cells using single-molecule imaging techniques. Outside the lab, he enjoys marathon running, hiking, and watching sports\u2014especially baseball, F1, and sailing.",
     "image_name": "yutaro_suzuki.jpg"
   },
   {

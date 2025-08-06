@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   // Keep copying assets to _site
   eleventyConfig.addPassthroughCopy("./assets");
+  eleventyConfig.addPassthroughCopy("CNAME");
 
   return {
     dir: {
