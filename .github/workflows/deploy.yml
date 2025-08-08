@@ -19,11 +19,25 @@ jobs:
           node-version: 20
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      # - name: Install dependencies
+      #   run: npm install
 
-      - name: Build site
-        run: npx eleventy
+      # - name: Build site
+      #   run: npx eleventy
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Build (Eleventy + Tailwind)
+        run: npm run build
+
+      # --- Build Tailwind CSS BEFORE Eleventy ---
+      # Adjust -i / -o paths if yours differ.
+      # - name: Build CSS (Tailwind)
+      #   run: npx tailwindcss -i ./tailwind.css -o ./assets/tailwind.css --minify
+
+      # - name: Build site (Eleventy)
+      #   run: npx eleventy
 
       - name: Add .nojekyll
         run: touch _site/.nojekyll
@@ -33,5 +47,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-          publish_branch: gh-pages
+          publish_branch: gh-pages 
 
