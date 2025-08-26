@@ -74,6 +74,21 @@
 
     <!-- Event Block -->
     <div class="mb-10">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">Summer Barbecue 2025</h3>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
+        <template x-for="(img, index) in events['bbq2025']" :key="img.src">
+          <img 
+            :src="img.src" 
+            @click="open(index, 'bbq2025')" 
+            class="cursor-pointer rounded-lg shadow-md hover:scale-105 transition" 
+            :alt="img.caption"
+          />
+        </template>
+      </div>
+    </div>
+
+    <!-- Event Block -->
+    <div class="mb-10">
       <h3 class="text-2xl font-semibold text-gray-800 mb-4">Summer Barbecue 2024</h3>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4">
         <template x-for="(img, index) in events['bbq2024']" :key="img.src">
@@ -151,8 +166,19 @@
           { src: `${BASE}/assets/fun/beach2022/01.jpg`, caption: '' },
           { src: `${BASE}/assets/fun/beach2022/02.jpg`, caption: 'Sriram forgot to jump' },
         ],
+        bbq2025: [
+          { src: `${BASE}/assets/fun/bbq2025/01.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/02.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/03.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/04.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/05.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/06.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/07.jpg`, caption: '' },
+          { src: `${BASE}/assets/fun/bbq2025/08.jpg`, caption: '' }
+        ],
       },
       eventLabels: {
+        bbq2025: "Summer Barbecue 2025",
         bbq2024: "Summer Barbecue 2024",
         beach2022: "Beach Day 2022"
       },
