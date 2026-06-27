@@ -48,12 +48,6 @@
     "image_name": "shuting_li.jpg"
   },
   {
-    "Name": "Samuel Taylor",
-    "Title": "Instructor",
-    "Description": "Whilst in the lab, Sam investigates the molecular mechanisms and cellular consequences caused by treatment with novel transcription factor targeting pharmacologics. Outside of the lab Sam hones his mental skills with intense matches of bridge, pokemon battles and crosswords, and maintains physical fitness by playing almost any sport. He loves the good things in life, especially exotic food and drink.",
-    "image_name": "samuel_taylor.jpg"
-  },
-  {
     "Name": "Shoichiro Takeishi",
     "Title": "Staff Scientist",
     "Description": "Shoichiro is a physician-scientist who obtained his MD and PhD at Kyushu University, Japan. His PhD study provided proof-of-concept that quiescence in leukemic stem cells contributes to their therapeutic resistance. At Einstein, Shoichiro proposed a new paradigm regarding hematopoietic stem cell numbers and niche availability. Outside the lab, he enjoys taking care of his home vegetable garden.",
@@ -74,7 +68,7 @@
   {
     "Name": "Noah Jacobs",
     "Title": "MD/PhD Student",
-    "Description": "",
+    "Description": "Noah is an MD/PhD student who graduated from the University of Wisconsin\u2013Madison in 2021, where he studied neurobiology and investigated the relationship between radon exposure and lung cancer risk. He then earned a master\u2019s degree in immunology at Harvard Medical School and worked in the laboratory of Dr. Gabriel Griffin at Dana-Farber Cancer Institute, studying the transcriptional regulation of the complement system and its association with schizophrenia and lupus. Noah is co-mentored by Dr. Ulrich Steidl and Dr. Robert Coleman, and his research uses live-cell single-molecule imaging to better understand the dynamic regulation of hematopoietic transcription factors and their connection to acute myeloid leukemia. Outside of the lab, Noah enjoys cooking, surfing, playing tennis, and helping lead the Einstein Innovation Group.",
     "image_name": "noah_jacobs.jpg"
   },
   {
